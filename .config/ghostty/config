@@ -1,0 +1,7 @@
+font-size = 14
+font-family = "FiraCode Nerd Font Mono"
+shell-integration-features = "no-cursor"
+cursor-style = "block"
+theme = "tokyonight_night"
+title = ""
+macos-titlebar-proxy-icon = "hidden"
