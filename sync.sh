@@ -23,3 +23,7 @@ ln -s $HOME/dotfiles/.config/starship.toml $HOME/.config/starship.toml
 # Ghostty
 rm -rf $HOME/.config/ghostty
 ln -s $HOME/dotfiles/.config/ghostty $HOME/.config/ghostty
+
+# Tmux
+rm $HOME/.tmux.conf
+ln -s $HOME/dotfiles/.tmux.conf $HOME/.tmux.conf
