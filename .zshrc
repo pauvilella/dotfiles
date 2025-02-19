@@ -129,7 +129,7 @@ git config --global alias.home 'rev-parse --show-toplevel'
 command -v flux >/dev/null && . <(flux completion zsh)
 
 ## Aliases ##
-alias cat='bat -p'
+alias cat='bat --plain --paging=never'
 alias k='kubectl'
 alias kc='kubectx'
 alias kn='kubens'
