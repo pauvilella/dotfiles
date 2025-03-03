@@ -60,8 +60,7 @@ echo "Updating brew..."
 brew update
 echo "Installing brew taps, formulas and casks..."
 brew bundle --file=$HOME/dotfiles/Brewfile
-echo "Installing Work related brew taps, formulas and casks..."
-brew bundle --file=$HOME/.work/Brewfile
 echo "Upgrading brew"
+brew upgrade
 
 echo "All done! :)"

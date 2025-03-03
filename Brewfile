@@ -94,3 +94,6 @@ brew "weaveworks/tap/eksctl"
 cask "ghostty"
 cask "ngrok"
 cask "wireshark"
+
+# Work related
+instance_eval(File.read("/Users/pauvilella/.work/Brewfile"))
