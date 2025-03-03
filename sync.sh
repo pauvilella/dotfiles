@@ -27,3 +27,8 @@ ln -s $HOME/dotfiles/.config/ghostty $HOME/.config/ghostty
 # Tmux
 rm $HOME/.tmux.conf
 ln -s $HOME/dotfiles/.tmux.conf $HOME/.tmux.conf
+
+# Git
+rm $HOME/.gitconfig
+ln -s $HOME/dotfiles/.gitconfig $HOME/.gitconfig
+

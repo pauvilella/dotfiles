@@ -1,0 +1,16 @@
+[user]
+        name = Pau Vilella
+        email = pau.vilella.st@gmail.com
+
+[credential]
+        helper = osxkeychain
+
+[init]
+        defaultbranch = main
+
+[alias]
+	home = rev-parse --show-toplevel
+
+# Include Work specific config
+[includeIf "gitdir:~/git/work/**"]
+        path = ~/.work/.gitconfig

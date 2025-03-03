@@ -137,4 +137,4 @@ alias git-home='cd $(git home)'
 alias eg='env | grep -i'
 
 ### Work Specific ###
-source $HOME/.work.zshrc
+source $HOME/.work/.zshrc
