@@ -122,9 +122,6 @@ compdef __start_kubectl k
 ## Golang ##
 export PATH="$PATH:$(go env GOPATH)/bin"
 
-## Git ##
-git config --global alias.home 'rev-parse --show-toplevel'
-
 ## Flux ##
 command -v flux >/dev/null && . <(flux completion zsh)
 
@@ -135,6 +132,7 @@ alias kc='kubectx'
 alias kn='kubens'
 alias git-home='cd $(git home)'
 alias eg='env | grep -i'
+alias pauvilella='cd $HOME/git/personal/pauvilella/'
 
 ### Work Specific ###
 source $HOME/.work/.zshrc
