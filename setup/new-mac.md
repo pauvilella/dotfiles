@@ -41,3 +41,12 @@ Inside the `git/work` folder I'll add the Work specific orgs, and inside the `gi
 
 - `mkdir -p $HOME/git/work`
 - `mkdir -p $HOME/git/personal
+
+## Setup Dotfiles
+
+Setup dotfiles:
+
+- `cd $HOME && git clone git@github.com:pauvilella/dotfiles.git`
+- `cd $HOME/dotfiles`
+- `chmod +x setup.sh`
+- `./setup.sh`
