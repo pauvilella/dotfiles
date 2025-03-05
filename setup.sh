@@ -64,3 +64,4 @@ echo "Upgrading brew"
 brew upgrade
 
 echo "All done! :)"
+
