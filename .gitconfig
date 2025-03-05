@@ -10,12 +10,6 @@
 
 [alias]
 	home = rev-parse --show-toplevel
-        a = add .
-        c = commit -m
-        p = push
-        ph = push -u origin head
-        nb = checkout -b
-        m = checkout main
 
 # Include Work specific config
 [includeIf "gitdir:~/git/work/**"]
