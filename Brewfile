@@ -10,6 +10,7 @@ tap "shopify/shopify"
 tap "tofuutils/tap"
 tap "vectordotdev/brew"
 tap "weaveworks/tap"
+tap "pulumi/tap"
 
 # Brew install
 brew "cryptography"
@@ -89,6 +90,7 @@ brew "fluxcd/tap/flux"
 brew "nats-io/nats-tools/nats"
 brew "vectordotdev/brew/vector"
 brew "weaveworks/tap/eksctl"
+brew "pulumi/tap/pulumi"
 
 # Brew install --cask
 cask "ghostty"
