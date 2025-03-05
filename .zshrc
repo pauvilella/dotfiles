@@ -131,6 +131,8 @@ alias k='kubectl'
 alias kc='kubectx'
 alias kn='kubens'
 alias git-home='cd $(git home)'
+alias gc='git commit -m'
+alias gph='git push -u origin head'
 alias eg='env | grep -i'
 alias pauvilella='cd $HOME/git/personal/pauvilella/'
 
