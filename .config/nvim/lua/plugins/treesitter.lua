@@ -30,6 +30,7 @@ return {
         'json',
         'terraform',
         'yaml',
+        'pkl',
       },
       -- Autoinstall languages that are not installed
       auto_install = true,
