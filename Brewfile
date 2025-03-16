@@ -89,6 +89,7 @@ brew "fluxcd/tap/flux"
 brew "nats-io/nats-tools/nats"
 brew "vectordotdev/brew/vector"
 brew "weaveworks/tap/eksctl"
+brew "upbound/tap/up"
 
 # Brew install --cask
 cask "ghostty"
