@@ -204,21 +204,6 @@ return {
         -- Markdown
         marksman = {},
 
-        -- Yaml
-        yamlls = {
-          settings = {
-            yaml = {
-              format = {
-                enable = true,
-                singleQuote = false,
-                bracketSpacing = true,
-              },
-              validate = true,
-              completion = true,
-            },
-          },
-        },
-
         -- Golang
         gopls = {
           settings = {
@@ -239,6 +224,9 @@ return {
             filetypes = { 'terraform', 'terraform-vars' },
           },
         },
+
+        -- Yaml (it's patched on the yaml-schemas.lua file)
+        yamlls = {},
 
         -- Json
         jsonls = {
