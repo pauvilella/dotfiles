@@ -10,3 +10,25 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     vim.highlight.on_yank()
   end,
 })
+
+-- Detecte Terraform related files
+vim.api.nvim_create_autocmd({ 'BufRead', 'BufNewFile' }, {
+  pattern = { '*.tf' },
+  callback = function()
+    vim.cmd 'set filetype=terraform'
+  end,
+})
+
+vim.api.nvim_create_autocmd({ 'BufRead', 'BufNewFile' }, {
+  pattern = { '*.tfvars' },
+  callback = function()
+    vim.cmd 'set filetype=terraform-vars'
+  end,
+})
+
+vim.api.nvim_create_autocmd({ 'BufRead', 'BufNewFile' }, {
+  pattern = { '*.hcl' },
+  callback = function()
+    vim.cmd 'set filetype=hcl'
+  end,
+})
