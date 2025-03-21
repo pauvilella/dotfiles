@@ -90,6 +90,7 @@ brew "nats-io/nats-tools/nats"
 brew "vectordotdev/brew/vector"
 brew "weaveworks/tap/eksctl"
 brew "upbound/tap/up"
+brew "terragrunt-atlantis-config"
 
 # Brew install --cask
 cask "ghostty"

@@ -136,5 +136,8 @@ alias gph='git push -u origin head'
 alias eg='env | grep -i'
 alias pauvilella='cd $HOME/git/personal/pauvilella/'
 
+## Load Secret env vars ##
+source $HOME/.zshrc.secrets
+
 ### Work Specific ###
 source $HOME/.work/.zshrc
