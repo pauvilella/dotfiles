@@ -135,6 +135,7 @@ alias gc='git commit -m'
 alias gph='git push -u origin head'
 alias eg='env | grep -i'
 alias pauvilella='cd $HOME/git/personal/pauvilella/'
+alias vim='nvim'
 
 ## Load Secret env vars ##
 source $HOME/.zshrc.secrets
