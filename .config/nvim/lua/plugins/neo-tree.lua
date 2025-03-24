@@ -65,7 +65,7 @@ return {
         },
       },
       filtered_items = {
-        visible = false,
+        visible = true,
         hide_dotfiles = true,
         hide_gitignored = false,
       },

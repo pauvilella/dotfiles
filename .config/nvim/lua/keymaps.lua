@@ -31,6 +31,11 @@ vim.keymap.set('n', '<leader>Q', ':xa<cr>', { desc = 'Save and quite all buffers
 -- Save all buffers
 vim.keymap.set('n', '<leader>W', ':wa<cr>', { desc = 'Save all buffers' })
 
+-- Move between buffers
+vim.keymap.set('n', '<leader>bn', ':bn<cr>', { desc = '[B]uffer [N]ext' })
+vim.keymap.set('n', '<leader>bp', ':bp<cr>', { desc = '[B]uffer [P]revious' })
+vim.keymap.set('n', '<leader>bd', ':bd<cr>', { desc = '[B]uffer [D]elete' })
+
 -- Select all
 vim.keymap.set('n', '<leader>a', ':keepjumps normal! ggVG<cr>', { desc = 'Select all' })
 
