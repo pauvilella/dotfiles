@@ -118,6 +118,8 @@ export KUBE_EDITOR=/opt/homebrew/bin/nvim
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 source <(kubectl completion zsh)
 compdef __start_kubectl k
+# Tell zsh to use the same autocomplete for kubecolor too
+compdef kubecolor=kubectl
 
 ## Golang ##
 export PATH="$PATH:$(go env GOPATH)/bin"
@@ -128,6 +130,7 @@ command -v flux >/dev/null && . <(flux completion zsh)
 ## Aliases ##
 alias cat='bat --plain --paging=never'
 alias k='kubectl'
+alias kubectl='kubecolor'
 alias kc='kubectx'
 alias kn='kubens'
 alias git-home='cd $(git home)'
