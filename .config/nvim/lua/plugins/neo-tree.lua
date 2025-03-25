@@ -1,6 +1,3 @@
--- Neo-tree is a Neovim plugin to browse the file system
--- https://github.com/nvim-neo-tree/neo-tree.nvim
-
 local function copy_path(state)
   local node = state.tree:get_node()
   local filepath = node:get_id()
@@ -50,13 +47,12 @@ return {
   cmd = 'Neotree',
   keys = {
     { '|', ':Neotree reveal<CR>', desc = 'NeoTree reveal', silent = true },
-    { '<leader>nb', ':Neotree toggle show buffers right<CR>', desc = 'Neotree show open buffers on the right', silent = true },
-    { '<leader>ng', ':Neotree float git_status<CR>', desc = 'Neotree show git status', silent = true },
+    { '<leader>nb', ':Neotree toggle show buffers right<CR>', desc = '[N]eotree [B]uffers', silent = true },
+    { '<leader>ng', ':Neotree float git_status<CR>', desc = '[N]eotree [G]it', silent = true },
   },
   opts = {
     filesystem = {
       window = {
-        -- Add autoexpand to match filename length
         auto_expand_width = true,
         mappings = {
           ['|'] = 'close_window',
@@ -66,7 +62,7 @@ return {
       },
       filtered_items = {
         visible = true,
-        hide_dotfiles = true,
+        hide_dotfiles = false,
         hide_gitignored = false,
       },
     },
