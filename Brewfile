@@ -71,8 +71,6 @@ brew "six"
 brew "starship"
 brew "stern"
 brew "telnet"
-brew "tenv", link: false
-brew "terraform"
 brew "terragrunt"
 brew "tflint"
 brew "tmux"
