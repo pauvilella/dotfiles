@@ -16,8 +16,7 @@ return {
 
       -- schemas available in Telescope picker
       schemas = {
-        -- not loaded automatically, manually select with
-        -- :Telescope yaml_schema
+        -- not loaded automatically, manually select with :Telescope yaml_schema
         {
           name = 'Argo CD Application',
           uri = 'https://raw.githubusercontent.com/datreeio/CRDs-catalog/main/argoproj.io/application_v1alpha1.json',
