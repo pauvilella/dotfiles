@@ -39,6 +39,8 @@ return {
           --  To jump back, press <C-t>.
           map('gd', require('telescope.builtin').lsp_definitions, '[G]oto [D]efinition')
 
+          map('<leader>h', vim.lsp.buf.hover, '[H]over')
+
           map('gD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
 
           map('gr', require('telescope.builtin').lsp_references, '[G]oto [R]eferences')
