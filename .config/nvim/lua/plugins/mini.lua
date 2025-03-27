@@ -12,15 +12,15 @@ return {
     require('mini.move').setup {
       mappings = {
         -- Move visual selection in Visual mode.
-        left = '<S-h>',
-        right = '<S-l>',
-        down = '<S-j>',
-        up = '<S-k>',
+        left = '<A-h>',
+        right = '<A-l>',
+        down = '<A-j>',
+        up = '<A-k>',
         -- Move current line in Normal mode
-        line_left = '<S-h>',
-        line_right = '<S-l>',
-        line_down = '<S-j>',
-        line_up = '<S-k>',
+        line_left = '<A-h>',
+        line_right = '<A-l>',
+        line_down = '<A-j>',
+        line_up = '<A-k>',
       },
       options = {
         reindent_linewise = true,

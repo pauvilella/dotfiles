@@ -140,7 +140,7 @@ return {
         -- Terraform
         terraformls = {
           settings = {
-            filetypes = { 'terraform', 'terraform-vars' },
+            filetypes = { 'terraform', 'terraform-vars', 'hcl' },
           },
         },
 
