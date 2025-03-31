@@ -28,17 +28,17 @@ ln -s $HOME/dotfiles/.tmux.conf $HOME/.tmux.conf
 # Ghostty
 echo "Setting up Ghostty..."
 rm -rf $HOME/.config/ghostty
-ln -s $HOME/dotfiles/.config/ghostty $HOME/.config/ghostty
+ln -s $HOME/dotfiles/config/ghostty $HOME/.config/ghostty
 
 # Starship
 echo "Setting up Starship..."
 rm $HOME/.config/starship.toml
-ln -s $HOME/dotfiles/.config/starship.toml $HOME/.config/starship.toml
+ln -s $HOME/dotfiles/config/starship.toml $HOME/.config/starship.toml
 
 # GitHub CLI
 echo "Setting up GitHub CLI..."
 rm -rf $HOME/.config/gh
-ln -s $HOME/dotfiles/.config/gh $HOME/.config/gh
+ln -s $HOME/dotfiles/config/gh $HOME/.config/gh
 
 # Cobra
 echo "Setting up Cobra..."
