@@ -18,7 +18,7 @@ ln -s $HOME/dotfiles/.gitconfig $HOME/.gitconfig
 # Nvim
 echo "Setting up NeoVim..."
 rm -rf $HOME/.config/nvim
-ln -s $HOME/dotfiles/.config/nvim $HOME/.config/nvim
+ln -s $HOME/dotfiles/config/nvim $HOME/.config/nvim
 
 # Tmux
 echo "Setting up Tmux..."
@@ -48,13 +48,13 @@ ln -s $HOME/dotfiles/.cobra.yaml $HOME/.cobra.yaml
 # Brew
 echo "Setting up Brew and installing formulas..."
 if ! command -v brew &>/dev/null; then
-    echo "Homebrew is not installed. Installing now..."
-    # Install Homebrew
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    # Ensure Homebrew is available in the current session
-    eval "$(/opt/homebrew/bin/brew shellenv 2>/dev/null)"
+  echo "Homebrew is not installed. Installing now..."
+  # Install Homebrew
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  # Ensure Homebrew is available in the current session
+  eval "$(/opt/homebrew/bin/brew shellenv 2>/dev/null)"
 else
-    echo "Homebrew is already installed!"
+  echo "Homebrew is already installed!"
 fi
 echo "Updating brew..."
 brew update
