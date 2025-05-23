@@ -96,6 +96,8 @@ brew "upbound/tap/up"
 brew "terragrunt-atlantis-config"
 brew "jesseduffield/lazygit/lazygit"
 brew "gcc"
+brew "oras"
+brew "kcl-lang/tap/kcl"
 
 # Brew install --cask
 cask "ghostty"
