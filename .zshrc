@@ -33,6 +33,11 @@ export PATH="$PATH:$(go env GOPATH)/bin"
 ## Flux ##
 command -v flux >/dev/null && . <(flux completion zsh)
 
+## Atuin ##
+. "$HOME/.atuin/bin/env"
+
+eval "$(atuin init zsh)"
+
 ## Aliases ##
 alias cat='bat --plain --paging=never'
 alias k='kubectl'

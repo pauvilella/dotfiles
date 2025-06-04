@@ -30,6 +30,11 @@ echo "Setting up Ghostty..."
 rm -rf $HOME/.config/ghostty
 ln -s $HOME/dotfiles/config/ghostty $HOME/.config/ghostty
 
+# Atuin
+echo "Setting up Atuin..."
+rm $HOME/.config/atuin/config.toml
+ln -s $HOME/dotfiles/config/atuin/config.toml $HOME/.config/atuin/config.toml
+
 # Starship
 echo "Setting up Starship..."
 rm $HOME/.config/starship.toml
