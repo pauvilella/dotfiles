@@ -97,6 +97,7 @@ brew "jesseduffield/lazygit/lazygit"
 brew "gcc"
 brew "oras"
 brew "kcl-lang/tap/kcl"
+brew "atuin"
 
 # Brew install --cask
 cask "ghostty"

@@ -34,8 +34,6 @@ export PATH="$PATH:$(go env GOPATH)/bin"
 command -v flux >/dev/null && . <(flux completion zsh)
 
 ## Atuin ##
-. "$HOME/.atuin/bin/env"
-
 eval "$(atuin init zsh)"
 
 ## Aliases ##
