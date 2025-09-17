@@ -53,3 +53,7 @@ source $HOME/.zshrc.secrets
 
 ### Work Specific ###
 source $HOME/.work/.zshrc
+source <(capri --zsh-completions 2>/dev/null)
+source <(isc --zsh-completions 2>/dev/null)
+source <(acc --zsh-completions 2>/dev/null)
+[[ :$PATH: == *:$HOME/bin:* ]] || PATH=$HOME/bin:$PATH

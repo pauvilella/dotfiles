@@ -2,6 +2,6 @@ font-size = 15
 font-family = "FiraCode Nerd Font Mono"
 shell-integration-features = "no-cursor"
 cursor-style = "block"
-theme = "tokyonight_night"
+theme = "TokyoNight Night"
 title = ""
 macos-titlebar-proxy-icon = "hidden"
