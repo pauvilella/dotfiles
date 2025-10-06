@@ -35,6 +35,7 @@ command -v flux >/dev/null && . <(flux completion zsh)
 
 ## Atuin ##
 eval "$(atuin init zsh)"
+. "$HOME/.atuin/bin/env"
 
 ## Aliases ##
 alias cat='bat --plain --paging=never'
@@ -44,7 +45,7 @@ alias kc='kubectx'
 alias kn='kubens'
 alias ti='terragrunt init'
 alias tp='terragrunt plan'
-alias tp='terragrunt apply'
+alias ta='terragrunt apply'
 alias tu='terragrunt force-unlock'
 alias git-home='cd $(git home)'
 alias eg='env | grep -i'

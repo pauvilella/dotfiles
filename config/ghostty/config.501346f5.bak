@@ -5,4 +5,3 @@ cursor-style = "block"
 theme = "TokyoNight Night"
 title = ""
 macos-titlebar-proxy-icon = "hidden"
-keybind = shift+enter=text:\x1b\r
