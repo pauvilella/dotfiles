@@ -53,6 +53,9 @@ alias pauvilella='cd $HOME/git/personal/pauvilella/'
 alias dotfiles='cd $HOME/dotfiles/'
 alias vim='nvim'
 
+## Load Scripts ##
+source $HOME/.config/scripts/brew-clean.sh
+
 ## Load Secret env vars ##
 source $HOME/.zshrc.secrets
 

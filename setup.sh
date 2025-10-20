@@ -20,6 +20,12 @@ echo "Setting up NeoVim..."
 rm -rf $HOME/.config/nvim
 ln -s $HOME/dotfiles/config/nvim $HOME/.config/nvim
 
+# Claude
+echo "Setting up Claude..."
+rm -rf $HOME/.config/claude
+ln -s $HOME/dotfiles/config/claude $HOME/.config/claude
+chmod +x $HOME/.config/claude/scripts/*
+
 # Tmux
 echo "Setting up Tmux..."
 rm $HOME/.tmux.conf
@@ -50,6 +56,13 @@ echo "Setting up Cobra..."
 rm $HOME/.cobra.yaml
 ln -s $HOME/dotfiles/.cobra.yaml $HOME/.cobra.yaml
 
+## Scripts ##
+echo "Loading shell scripts..."
+rm -rf $HOME/.config/scripts
+mkdir -p $HOME/.config/scripts
+ln -s $HOME/dotfiles/scripts/brew-clean.sh $HOME/.config/scripts/brew-clean.sh
+chmod +x $HOME/.config/scripts/brew-clean.sh
+
 # Brew
 echo "Setting up Brew and installing formulas..."
 if ! command -v brew &>/dev/null; then
@@ -61,6 +74,10 @@ if ! command -v brew &>/dev/null; then
 else
   echo "Homebrew is already installed!"
 fi
+
+source $HOME/.config/scripts/brew-clean.sh
+brew-clean
+
 echo "Updating brew..."
 brew update
 echo "Installing brew taps, formulas and casks..."

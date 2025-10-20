@@ -5,7 +5,6 @@ tap "fluxcd/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "nats-io/nats-tools"
-tap "ngrok/ngrok"
 tap "shopify/shopify"
 tap "tofuutils/tap"
 tap "vectordotdev/brew"
@@ -102,8 +101,7 @@ brew "skopeo"
 
 # Brew install --cask
 cask "ghostty"
-cask "ngrok"
-cask "wireshark"
+cask "wireshark-app"
 
 # Work related
 instance_eval(File.read("/Users/pauvilella/.work/Brewfile"))
