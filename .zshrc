@@ -52,6 +52,9 @@ alias eg='env | grep -i'
 alias pauvilella='cd $HOME/git/personal/pauvilella/'
 alias dotfiles='cd $HOME/dotfiles/'
 alias vim='nvim'
+alias al='aws-login'
+alias ap='aws-profile'
+alias asso='aws sso login --sso-session sso-cloudtech'
 
 ## Load Scripts ##
 source $HOME/.config/scripts/brew-clean.sh
