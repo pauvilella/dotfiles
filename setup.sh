@@ -50,6 +50,8 @@ ln -s $HOME/dotfiles/config/starship.toml $HOME/.config/starship.toml
 echo "Setting up GitHub CLI..."
 rm -rf $HOME/.config/gh
 ln -s $HOME/dotfiles/config/gh $HOME/.config/gh
+echo "Merging GitHub hosts configuration..."
+$HOME/dotfiles/scripts/merge-gh-hosts.sh
 
 # Cobra
 echo "Setting up Cobra..."
