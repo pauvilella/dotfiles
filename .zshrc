@@ -62,6 +62,12 @@ source $HOME/.config/scripts/brew-clean.sh
 ## Load Secret env vars ##
 source $HOME/.zshrc.secrets
 
+## Add .local/bin to the PATH ##
+export PATH="$HOME/.local/bin:$PATH"
+
+## Postgres ##
+export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
+
 ### Work Specific ###
 source $HOME/.work/.zshrc
 source <(capri --zsh-completions 2>/dev/null)
