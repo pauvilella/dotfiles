@@ -2,8 +2,8 @@
         name = Pau Vilella
         email = pau.vilella.st@gmail.com
 
-[credential]
-        helper = osxkeychain
+; [credential]
+;         helper = osxkeychain
 
 [init]
         defaultbranch = main
