@@ -12,7 +12,7 @@
 	home = rev-parse --show-toplevel
   br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
   last = log -1 HEAD
-  tidy = !git --no-pager branch --merged | egrep -v 'main|master|develop|HEAD' | xargs -n 1 git branch -d && git remote update origin --prune
+  tidy = !git fetch -p && git for-each-ref --format '%(refname:short) %(upstream:track)' refs/heads | awk '$2 == \"[gone]\" {print $1}' | egrep -v 'main|master|develop' | xargs -r git branch -D
   alias = !git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
   plog = log --pretty=format:'%C(blue)%h %C(yellow)%ad%C(red)%d %C(reset)%s%C(green) [%cn]' --decorate --date=short --graph --all
 
