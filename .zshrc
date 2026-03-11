@@ -56,6 +56,9 @@ alias al='aws-login'
 alias ap='aws-profile'
 alias asso='aws sso login --sso-session sso-cloudtech'
 
+## Load Functions ##
+source $HOME/.zsh_functions
+
 ## Load Scripts ##
 source $HOME/.config/scripts/brew-clean.sh
 
