@@ -4,6 +4,8 @@
 echo "Setting up ZSH..."
 rm $HOME/.zshrc
 ln -s $HOME/dotfiles/.zshrc $HOME/.zshrc
+rm -f $HOME/.zsh_functions
+ln -s $HOME/dotfiles/.zsh_functions $HOME/.zsh_functions
 
 # SSH
 echo "Setting up SSH..."
