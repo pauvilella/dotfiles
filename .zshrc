@@ -35,7 +35,6 @@ command -v flux >/dev/null && . <(flux completion zsh)
 
 ## Atuin ##
 eval "$(atuin init zsh)"
-. "$HOME/.atuin/bin/env"
 
 ## Aliases ##
 alias cat='bat --plain --paging=never'

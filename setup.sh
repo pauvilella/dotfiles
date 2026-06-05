@@ -22,12 +22,6 @@ echo "Setting up NeoVim..."
 rm -rf $HOME/.config/nvim
 ln -s $HOME/dotfiles/config/nvim $HOME/.config/nvim
 
-# Claude
-echo "Setting up Claude..."
-rm -rf $HOME/.config/claude
-ln -s $HOME/dotfiles/config/claude $HOME/.config/claude
-chmod +x $HOME/.config/claude/scripts/*
-
 # Tmux
 echo "Setting up Tmux..."
 rm $HOME/.tmux.conf
