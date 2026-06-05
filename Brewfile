@@ -12,7 +12,8 @@ tap "hashicorp/tap"
 
 # Brew install
 brew "cryptography"
-brew "python@3.12"
+brew "python"
+brew "rust"
 brew "awscli"
 brew "bash"
 brew "bash-completion"
