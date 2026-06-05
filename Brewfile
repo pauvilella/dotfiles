@@ -94,6 +94,8 @@ brew "oras"
 brew "kcl-lang/tap/kcl"
 brew "skopeo"
 brew "atuin"
+brew "uv"
+brew "node"
 
 # Brew install --cask
 cask "ghostty"
