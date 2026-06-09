@@ -9,6 +9,7 @@ tap "vectordotdev/brew"
 tap "weaveworks/tap"
 tap "jesseduffield/lazygit"
 tap "hashicorp/tap"
+tap "terraform-linters/tap"
 
 # Brew install
 brew "cryptography"
@@ -97,10 +98,12 @@ brew "skopeo"
 brew "atuin"
 brew "uv"
 brew "node"
+brew "trivy"
 
 # Brew install --cask
 cask "ghostty"
 cask "wireshark-app"
+cask "tflint"
 
 # Work related
 instance_eval(File.read("/Users/pauvilella/.work/Brewfile"))
