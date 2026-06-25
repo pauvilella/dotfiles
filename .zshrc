@@ -57,7 +57,7 @@ alias al='aws-login'
 alias ap='aws-profile'
 alias asso='aws sso login --sso-session sso-cloudtech'
 alias laibel-tunnel-dev='kubectl --context main -n laibel-dev port-forward pod/rds-bastion 15432:5432'
-alias laibel-tunnel-prod='kubectl --context main -n laibel port-forward pod/rds-bastion 15432:5432'
+alias laibel-tunnel-prod='kubectl --context main -n laibel port-forward pod/rds-bastion 25432:5432'
 
 ## Load Functions ##
 source $HOME/.zsh_functions
