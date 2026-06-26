@@ -10,6 +10,7 @@ tap "weaveworks/tap"
 tap "jesseduffield/lazygit"
 tap "hashicorp/tap"
 tap "terraform-linters/tap"
+tap "ariga/tap"
 
 # Brew install
 brew "cryptography"
@@ -99,6 +100,7 @@ brew "atuin"
 brew "uv"
 brew "node"
 brew "trivy"
+brew "ariga/tap/atlas"
 
 # Brew install --cask
 cask "ghostty"

@@ -78,6 +78,22 @@ brew-clean
 
 echo "Updating brew..."
 brew update
+
+# Homebrew 6+ refuses to load formulae/casks from third-party taps unless they
+# are trusted. Trust every tap our Brewfile uses (both explicitly declared taps
+# and the implicit ones from fully-qualified "owner/tap/name" entries) so that
+# brew bundle doesn't abort. No-op on older Homebrew without `brew trust`.
+if brew trust --help &>/dev/null; then
+  echo "Trusting third-party taps..."
+  {
+    brew bundle list --taps --file="$HOME/dotfiles/Brewfile" 2>/dev/null
+    grep -hoE '"[^"/]+/[^"/]+/[^"/]+"' "$HOME/dotfiles/Brewfile" "$HOME/.work/Brewfile" 2>/dev/null \
+      | tr -d '"' | sed -E 's#/[^/]+$##'
+  } | sort -u | while read -r tap; do
+    [ -n "$tap" ] && brew trust --tap "$tap"
+  done
+fi
+
 echo "Installing brew taps, formulas and casks..."
 brew bundle --file=$HOME/dotfiles/Brewfile
 echo "Upgrading brew"
