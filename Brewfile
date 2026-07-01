@@ -107,6 +107,7 @@ brew "cilium-cli"
 cask "ghostty"
 cask "wireshark-app"
 cask "tflint"
+cask "supacode"
 
 # Work related
 instance_eval(File.read("/Users/pauvilella/.work/Brewfile"))
