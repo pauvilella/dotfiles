@@ -101,6 +101,7 @@ brew "uv"
 brew "node"
 brew "trivy"
 brew "ariga/tap/atlas"
+brew "cilium-cli"
 
 # Brew install --cask
 cask "ghostty"
