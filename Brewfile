@@ -102,6 +102,7 @@ brew "node"
 brew "trivy"
 brew "ariga/tap/atlas"
 brew "cilium-cli"
+brew "lazymake"
 
 # Brew install --cask
 cask "ghostty"
