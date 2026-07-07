@@ -103,6 +103,7 @@ brew "trivy"
 brew "ariga/tap/atlas"
 brew "cilium-cli"
 brew "lazymake"
+brew "bufbuild/buf/buf"
 
 # Brew install --cask
 cask "ghostty"
