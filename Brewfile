@@ -104,6 +104,8 @@ brew "ariga/tap/atlas"
 brew "cilium-cli"
 brew "lazymake"
 brew "bufbuild/buf/buf"
+brew "softhsm"
+brew "gnutls"
 
 # Brew install --cask
 cask "ghostty"
