@@ -106,6 +106,8 @@ brew "lazymake"
 brew "bufbuild/buf/buf"
 brew "softhsm"
 brew "gnutls"
+brew "shfmt"
+brew "shellcheck"
 
 # Brew install --cask
 cask "ghostty"
