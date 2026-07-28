@@ -108,6 +108,7 @@ brew "softhsm"
 brew "gnutls"
 brew "shfmt"
 brew "shellcheck"
+brew "prek"
 
 # Brew install --cask
 cask "ghostty"
