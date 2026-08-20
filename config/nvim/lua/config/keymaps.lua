@@ -4,12 +4,6 @@
 
 vim.keymap.set("n", "<leader>a", ":keepjumps normal! ggVG<cr>", { desc = "Select all" })
 
-vim.keymap.set("n", "<leader>sx", require("snacks.picker").resume, { noremap = true, silent = true, desc = "Resume" })
-
-vim.keymap.set("n", "<leader>k", function()
-  vim.lsp.buf.hover()
-end, { noremap = true, silent = true, desc = "Hover" })
-
 vim.keymap.set(
   "v",
   "<leader>rw",
