@@ -78,3 +78,6 @@ source <(capri --zsh-completions 2>/dev/null)
 source <(isc --zsh-completions 2>/dev/null)
 source <(acc --zsh-completions 2>/dev/null)
 [[ :$PATH: == *:$HOME/bin:* ]] || PATH=$HOME/bin:$PATH
+
+### Homebrew ###
+export PATH="/opt/homebrew/bin:$PATH"

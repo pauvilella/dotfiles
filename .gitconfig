@@ -76,6 +76,9 @@
 # Include Work specific config
 [includeIf "gitdir:~/git/work/**"]
         path = ~/.work/.gitconfig
+# Go module cache fetches of work modules need the same ssh rewrite
+[includeIf "gitdir:~/go/pkg/mod/cache/vcs/**"]
+        path = ~/.work/.gitconfig
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
