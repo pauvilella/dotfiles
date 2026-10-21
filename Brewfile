@@ -111,6 +111,7 @@ brew "shellcheck"
 brew "prek"
 brew "stripe/stripe-cli/stripe"
 brew "openssl"
+brew "step"
 
 # Brew install --cask
 cask "ghostty"
