@@ -112,6 +112,7 @@ brew "prek"
 brew "stripe/stripe-cli/stripe"
 brew "openssl"
 brew "step"
+brew "deno"
 
 # Brew install --cask
 cask "ghostty"
